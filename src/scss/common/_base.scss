@@ -1,0 +1,67 @@
+:root {
+  font-family: 'Inter', sans-serif;
+  color: $_main_color;
+  background: $_main_bg_color;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-right: 70px;
+    padding-left: 70px;
+  }
+}
+
+.section {
+  scroll-margin-top: 50px;
+
+  @include media(desktop) {
+    scroll-margin-top: 80px;
+  }
+}
+
+.section-title {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  letter-spacing: -0.09em;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 30px;
+
+  @include media(desktop) {
+    font-size: 60px;
+    letter-spacing: -0.04em;
+    margin-bottom: 50px;
+  }
+}

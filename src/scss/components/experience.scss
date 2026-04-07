@@ -1,0 +1,64 @@
+.experience-section {
+}
+
+.experience-bg-wrapper {
+  padding-top: 50px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    max-width: 1440px;
+  }
+}
+
+.experience-container {
+  @include media(desktop) {
+  }
+}
+
+.experience-title {
+  @include media(desktop) {
+  }
+}
+
+.experience-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+
+  @include media(desktop) {
+    flex-direction: row;
+    gap: 60px;
+  }
+}
+
+.experience-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @include media(desktop) {
+    max-width: 671px;
+  }
+}
+
+.experience-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #151515;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+}
+
+.experience-img {
+  @include media(desktop) {
+    min-width: 478px;
+  }
+}

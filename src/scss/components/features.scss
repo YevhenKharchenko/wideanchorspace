@@ -1,0 +1,134 @@
+.features-section {
+  @include media(desktop) {
+  }
+}
+
+.features-section-wrapper {
+  padding-top: 50px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    max-width: 1440px;
+  }
+}
+
+.features-container {
+  @include media(desktop) {
+  }
+}
+
+.features-title {
+  @include media(desktop) {
+  }
+}
+
+.features-swiper-container {
+  max-width: 242px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 100%;
+  }
+}
+
+.features-swiper-container.show {
+  visibility: visible;
+}
+
+.features-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    width: 100%;
+  }
+}
+
+.features-list-item {
+  width: 100% !important;
+  max-width: 242px;
+  display: flex !important;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  overflow: hidden;
+
+  @include media(desktop) {
+    max-width: 352px;
+  }
+}
+
+.features-img {
+  @include media(desktop) {
+  }
+}
+
+.features-item-title {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: -0.03em;
+  text-align: center;
+  color: #151515;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+
+.features-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #151515;
+
+  @include media(desktop) {
+    font-size: 18px;
+    line-height: 1.61111;
+  }
+}
+
+.features-dot {
+  border-radius: 100%;
+  background: rgba(21, 21, 21, 0.6);
+  width: 4px;
+  height: 4px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  background-color: #b1b1b1;
+  cursor: pointer;
+}
+
+.features-dot.active {
+  background: #151515;
+  transform: scale(1.3);
+}
+
+.features-bottom-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+  color: #151515;
+  margin-top: 30px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.45;
+    text-align: center;
+    max-width: 878px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+  }
+}

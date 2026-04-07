@@ -1,0 +1,130 @@
+.reviews-section {
+  @include media(desktop) {
+  }
+}
+
+.reviews-section-wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  max-width: 375px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+
+  @include media(desktop) {
+    padding-top: 100px;
+    padding-bottom: 73px;
+    max-width: 1440px;
+  }
+}
+
+.reviews-container {
+  @include media(desktop) {
+  }
+}
+
+.reviews-title {
+  @include media(desktop) {
+  }
+}
+
+.reviews-swiper-container {
+  max-width: 334px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 100%;
+  }
+}
+
+.reviews-swiper-container.show {
+  visibility: visible;
+}
+
+.reviews-swiper-wrapper {
+  @include media(desktop) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+    width: 100%;
+  }
+}
+
+.reviews-list-item {
+  background: rgba(21, 21, 21, 0.8);
+  border: 1px solid #151515;
+  border-radius: 16px;
+  padding: 19px 24px;
+  display: flex !important;
+  flex-direction: column;
+  gap: 16px;
+  width: 100% !important;
+  max-width: 334px;
+  min-height: 215px;
+  overflow: hidden;
+
+  @include media(desktop) {
+    max-width: 368px;
+  }
+}
+
+.reviews-item-img-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-icon {
+  min-width: 20px;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-item-text {
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #fff;
+  max-width: 234px;
+
+  @include media(desktop) {
+    line-height: 1.71429;
+    max-width: max-content;
+  }
+}
+
+.reviews-item-name {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  margin-top: auto;
+
+  @include media(desktop) {
+  }
+}
+
+.reviews-dot {
+  border-radius: 100%;
+  background: rgba(21, 21, 21, 0.6);
+  width: 4px;
+  height: 4px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 100%;
+  background-color: #b1b1b1;
+  cursor: pointer;
+}
+
+.reviews-dot.active {
+  background: #151515;
+  transform: scale(1.3);
+}
