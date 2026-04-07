@@ -4,14 +4,20 @@
 }
 
 .hero-bg-wrapper {
-  padding-top: 84px;
+  padding-top: 183px;
+  padding-bottom: 282px;
   max-width: 375px;
   margin: 0 auto;
+  background-image: url(../img/hero/hero-bg-mob.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 174px;
-    padding-bottom: 90px;
+    padding-top: 197px;
+    padding-bottom: 281px;
     max-width: 1440px;
+    background-image: url(../img/hero/hero-bg-desk.png);
   }
 }
 
@@ -22,58 +28,57 @@
 
 .hero-content-wrapper {
   @include media(desktop) {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
 }
 
 .hero-text-wrapper {
-  margin-bottom: 25px;
-
   @include media(desktop) {
-    max-width: 671px;
-    margin-bottom: 0;
   }
 }
 
 .hero-title {
-  font-family: 'Orbitron', sans-serif;
-  font-weight: 900;
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 700;
   font-size: 30px;
-  letter-spacing: -0.05em;
-  color: #151515;
+  letter-spacing: -0.09em;
+  text-align: center;
+  color: #fff;
   margin-bottom: 10px;
 
   @include media(desktop) {
     font-size: 70px;
-    line-height: 1.14286;
-    letter-spacing: -0.02em;
+    letter-spacing: -0.04em;
   }
 }
 
 .hero-subtitle {
   font-family: 'Inter', sans-serif;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 16px;
-  line-height: 2;
-  color: #151515;
-  margin-bottom: 30px;
+  letter-spacing: -0.08em;
+  text-align: center;
+  background: linear-gradient(90deg, #8ec5ff 0%, #bedbff 50%, #c4b4ff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 50px;
 
   @include media(desktop) {
     font-size: 24px;
-    line-height: 1.33333;
-    margin-bottom: 50px;
+    letter-spacing: -0.05em;
   }
 }
 
 .hero-text-container {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 30px;
+  gap: 20px;
+  max-width: 298px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
+    max-width: 601px;
   }
 }
 
@@ -81,43 +86,9 @@
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 14px;
-  color: #151515;
+  color: #99a1af;
 
   @include media(desktop) {
-    font-size: 20px;
-    line-height: 1.6;
-  }
-}
-
-.hero-cta-link {
-  background: #151515;
-  border-radius: 20px;
-  padding: 9px 48px;
-  font-family: 'Inter', sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.71429;
-  letter-spacing: -0.01em;
-  text-align: center;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-width: max-content;
-
-  @include media(desktop) {
-    padding: 12px 68px;
     font-size: 18px;
-    line-height: 1.33333;
-    letter-spacing: -0.01em;
-  }
-}
-
-.hero-img {
-  margin-left: auto;
-  margin-right: auto;
-
-  @include media(desktop) {
-    margin: 0;
   }
 }
