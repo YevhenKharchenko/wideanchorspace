@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://truepathway.space/sitemap.xml
+Sitemap: https://wideanchor.space/sitemap.xml

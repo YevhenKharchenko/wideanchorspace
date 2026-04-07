@@ -1,64 +1,61 @@
-.experience-section {
+.alignments-section {
+  @include media(desktop) {
+  }
 }
 
-.experience-bg-wrapper {
+.alignments-bg-wrapper {
   padding-top: 50px;
+  padding-bottom: 18px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
 
   @include media(desktop) {
     padding-top: 100px;
+    padding-bottom: 0;
     max-width: 1440px;
   }
 }
 
-.experience-container {
+.alignments-container {
+  padding: 0 14px;
+
+  @include media(desktop) {
+    padding: 0 70px;
+  }
+}
+
+.alignments-title {
   @include media(desktop) {
   }
 }
 
-.experience-title {
+.alignments-content-wrapper {
   @include media(desktop) {
   }
 }
 
-.experience-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 30px;
-
-  @include media(desktop) {
-    flex-direction: row;
-    gap: 60px;
-  }
-}
-
-.experience-text-wrapper {
+.alignments-text-wrapper {
   display: flex;
   flex-direction: column;
   gap: 10px;
 
   @include media(desktop) {
-    max-width: 671px;
+    gap: 40px;
+    max-width: 660px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.experience-text {
+.alignments-text {
   font-family: 'Inter', sans-serif;
   font-weight: 300;
   font-size: 14px;
-  color: #151515;
+  color: #99a1af;
 
   @include media(desktop) {
     font-size: 20px;
-    line-height: 1.6;
-  }
-}
-
-.experience-img {
-  @include media(desktop) {
-    min-width: 478px;
+    line-height: 1.9;
   }
 }
